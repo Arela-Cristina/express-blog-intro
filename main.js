@@ -23,7 +23,13 @@ app.use("/images", express.static("public,images"));
 app.get("/", (req, res) => {
   //callback req, res
   console.log("Server del mio blog");
-  res.send("Benvenuto al server del inferno"); //proprieta .send per inviare una  risposta al client
+
+  //creiamo un oggetto contenente di (lenght e array di posts)
+  const response = {
+    lenght: posts.length, //lenght
+    array: posts, //elementi del array
+  };
+
 });
 
 //definiamo la rotta  ' /bacheca '
