@@ -7,6 +7,7 @@
     "dev": "node --watch main.js"
   },
   "keywords": [],
+  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
