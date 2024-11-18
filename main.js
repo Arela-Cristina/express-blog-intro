@@ -18,6 +18,13 @@ app.get("/", (req, res) => {
   res.send("Benvenuto al server del inferno"); //proprieta .send per inviare una  risposta al client
 });
 
+//definiamo la rotta  ' /bacheca '
+app.get("/bacheca", (req, res) => {
+  //callback req, res
+  console.log("La mia bacheca");
+  res.send("Questa sarebbe la mia bacheca");
+});
+
 //facciamo ascoltare il server dal client .listen
 app.listen(port, () => {
   console.log(`Il server del inferno ascolta http://localhost:${port}`);
