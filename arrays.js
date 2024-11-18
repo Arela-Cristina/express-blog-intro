@@ -20,3 +20,5 @@ const posts = [
     img: "/images/torta_paesana.jpeg",
   },
 ];
+
+//per rendere il nostro arrays.js publico, dobbiamo  uttilizzare un middleware .express.static() STEP 4
