@@ -14,5 +14,5 @@ console.log(port);
 //definiamo la rotta principale ' / '
 app.get("/", (req, res) => {
   console.log("Server del mio blog");
-  res.send("Benvenuto al server del inferno");
+  res.send("Benvenuto al server del inferno"); //proprieta .send per inviare una  risposta al client
 });
