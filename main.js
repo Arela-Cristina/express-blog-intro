@@ -1,15 +1,18 @@
 console.log("Hello World");
 
-//Creiamo il progetto base con una rotta / che ritorna un testo semplice con scritto “Server del mio blog”
+//Creiamo un server basico
 
-//importare modulo express in main.js
-const express = require("express");
+const express = require("express"); //importare modulo express in main.js
 // console.log(express); //oggetto
 
-//inizializzamo express. salviamo la istanzia, per uttilizzare dei metodi dopo
-const app = express();
+const app = express(); //inizializzamo express. salviamo la istanzia, per uttilizzare dei metodi dopo
 // console.log(app); //oggetto
 
-//assegniamo un numero alla porta principale della nostra app
-const port = 666;
+const port = 666; //assegniamo un numero alla porta principale della nostra app
 console.log(port);
+
+//definiamo la rotta principale ' / '
+app.get("/", (req, res) => {
+  console.log("Server del mio blog");
+  res.send("Benvenuto al server del inferno");
+});
