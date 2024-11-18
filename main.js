@@ -10,6 +10,10 @@ const app = express(); //inizializzamo express. salviamo la istanzia(il server: 
 const port = 666; //assegniamo un numero alla porta principale della nostra app
 console.log(port);
 
+//STEP 4
+//diciamo a express di gestire la risposta delle immagini statiche salvate nel nostro server
+app.use("/images", express.static("public,images"));
+
 // STEP 2
 //definiamo la rotta principale ' / '
 app.get("/", (req, res) => {
