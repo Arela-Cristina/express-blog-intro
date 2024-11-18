@@ -21,6 +21,6 @@ const posts = [
   },
 ];
 
-//per rendere il nostro arrays.js publico, dobbiamo  uttilizzare un middleware .express.static() STEP 4
+//per far gestire dalla App, le immagini statiche del nostro server, dobbiamo  uttilizzare un middleware .express.static() STEP 4
 
 export { posts }; //export ES Modules, possibile solo con la destrutturazione.
