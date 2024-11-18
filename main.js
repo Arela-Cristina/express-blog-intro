@@ -23,6 +23,13 @@ app.use("/images", express.static("public,images"));
 app.get("/", (req, res) => {
   //callback req, res
   console.log("Server del mio blog");
+  res.send("Benvenuto al server del inferno");
+});
+
+//definiamo la rotta  ' /bacheca '
+app.get("/bacheca", (req, res) => {
+  //callback req, res
+  console.log("La mia bacheca");
 
   //creiamo un oggetto contenente di (lenght e array di posts)
   const response = {
@@ -30,13 +37,8 @@ app.get("/", (req, res) => {
     array: posts, //elementi del array
   };
 
-});
-
-//definiamo la rotta  ' /bacheca '
-app.get("/bacheca", (req, res) => {
-  //callback req, res
-  console.log("La mia bacheca");
-  res.send("Questa sarebbe la mia bacheca");
+  //restituiamo un json con il nostro oggetto appena creato
+  res.json(response);
 });
 
 // STEP 3
