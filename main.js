@@ -33,7 +33,7 @@ app.get("/bacheca", (req, res) => {
 
   //creiamo un oggetto contenente di (lenght e array di posts)
   const response = {
-    lenght: posts.length, //lenght
+    length: posts.length, //lenght
     array: posts, //elementi del array
   };
 
